@@ -1,0 +1,18 @@
+---
+title: "DataProductsAssignment"
+author: "SomdebDatta"
+date: "10/22/2020"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+my_place <-leaflet() %>% addTiles()
+my_place <- my_place %>% 
+  addMarkers(lat=19.238209, lng= 72.850348, popup="Borivali West") %>%
+  addMarkers(lat=19.259458,lng=72.865216, popup="Dahisar East") %>%
+  addMarkers(lat=19.288381,lng=72.868268, popup="Mira Road")
+my_place
+```
+
+
